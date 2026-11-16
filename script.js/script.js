@@ -84,7 +84,13 @@ function endGame() {
 
     gameArea.querySelectorAll(".star").forEach(star => star.remove());
 
-    gameMessage.textContent = "Game Over! Your score: " + score;
+    gameMessage.innerHTML = `
+    <span class="final-message">
+        Her zaman başarılı olacaksın, inanıyorum.<br>
+        Pes etme, aslan parçası! ✨
+        <small>— hiross</small>
+    </span>
+`;
 
     startButton.textContent = "PLAY AGAIN";
 }
