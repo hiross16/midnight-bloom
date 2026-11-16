@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Midnight Bloom</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1>MIDNIGHT BLOOM</h1>
+        <nav>
+            <a href="#">HOME</a>
+            <a href="#">GARDEN</a>
+            <a href="#">ABOUT</a>
+        </nav>
+    </header>
+
+    <main>
+        <h2>Where flowers meet the night.</h2>
+        <p>A little garden hidden in the midnight.</p>
+
+       <div class="flowers">
+    <svg viewBox="0 0 400 350" class="bouquet">
+        <path class="stem" d="M200 310 Q170 200 100 100" />
+        <path class="stem" d="M200 310 Q220 200 290 90" />
+        <path class="stem" d="M200 310 Q190 190 200 70" />
+        <path class="stem" d="M200 310 Q130 220 65 180" />
+        <path class="stem" d="M200 310 Q270 220 335 180" />
+
+        <g class="flower flower-one">
+            <circle cx="100" cy="100" r="12"/>
+            <circle cx="100" cy="80" r="13"/>
+            <circle cx="120" cy="100" r="13"/>
+            <circle cx="100" cy="120" r="13"/>
+            <circle cx="80" cy="100" r="13"/>
+        </g>
+
+        <g class="flower flower-two">
+            <circle cx="290" cy="90" r="12"/>
+            <circle cx="290" cy="70" r="13"/>
+            <circle cx="310" cy="90" r="13"/>
+            <circle cx="290" cy="110" r="13"/>
+            <circle cx="270" cy="90" r="13"/>
+        </g>
+
+        <g class="flower flower-three">
+            <circle cx="200" cy="70" r="12"/>
+            <circle cx="200" cy="48" r="14"/>
+            <circle cx="222" cy="70" r="14"/>
+            <circle cx="200" cy="92" r="14"/>
+            <circle cx="178" cy="70" r="14"/>
+        </g>
+
+        <g class="flower flower-four">
+            <circle cx="65" cy="180" r="12"/>
+            <circle cx="65" cy="160" r="13"/>
+            <circle cx="85" cy="180" r="13"/>
+            <circle cx="65" cy="200" r="13"/>
+            <circle cx="45" cy="180" r="13"/>
+        </g>
+
+        <g class="flower flower-five">
+            <circle cx="335" cy="180" r="12"/>
+            <circle cx="335" cy="160" r="13"/>
+            <circle cx="355" cy="180" r="13"/>
+            <circle cx="335" cy="200" r="13"/>
+            <circle cx="315" cy="180" r="13"/>
+        </g>
+    </svg>
+</div> 
+
+        <button id="flowerButton">Discover the magic</button>
+        <section class="game">
+    <h2>Catch the Stars</h2>
+    <p>Collect the stars before midnight!</p>
+
+    <div class="game-info">
+        <span>Score: <b id="score">0</b></span>
+        <span>Time: <b id="time">30</b>s</span>
+    </div>
+
+    <div id="gameArea">
+        <p id="gameMessage">Ready to play?</p>
+    </div>
+
+    <button id="startGame">START GAME</button>
+</section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
