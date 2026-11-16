@@ -19,7 +19,34 @@ header {
     padding: 35px 8%;
     border-bottom: 1px solid #34394b;
 }
+.final-message {
+    display: block;
+    position: relative;
+    color: #e5c878;
+    font-family: Georgia, serif;
+    font-size: 22px;
+    line-height: 1.8;
+    text-align: center;
+    text-shadow: 0 0 12px rgba(229, 200, 120, 0.7);
+    animation: goldGlow 2s infinite alternate;
+}
 
+.final-message small {
+    display: block;
+    margin-top: 12px;
+    font-size: 16px;
+    letter-spacing: 4px;
+    color: #f4dca0;
+}
+
+@keyframes goldGlow {
+    from {
+        text-shadow: 0 0 5px rgba(229, 200, 120, 0.3);
+    }
+    to {
+        text-shadow: 0 0 18px rgba(229, 200, 120, 0.9);
+    }
+}
 header h1 {
     letter-spacing: 5px;
     font-size: 22px;
